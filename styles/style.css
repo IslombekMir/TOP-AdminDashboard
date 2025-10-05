@@ -1,0 +1,57 @@
+/*Fonts*/
+
+@font-face {
+    font-family: 'Asimovian';
+    src: url('Asimovian-Regular.woff2') format('woff2'),
+        url('Asimovian-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zalando Sans Expanded';
+    src: url('ZalandoSansExpanded-Regular.woff2') format('woff2'),
+        url('ZalandoSansExpanded-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*Normalize*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-family: 'Asimovian', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/*Layout*/
+
+.page {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 5fr;
+    grid-template-rows: 130px 1fr;
+    background-color: yellow;
+    min-width:100vw;
+    min-height: 100vh;
+}
+
+header {
+    background-color: red;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.sidebar {
+    background-color: green;
+    grid-area: 1 / 1 / 3 / 2
+}
+
+main {
+    background-color: blue;
+    grid-area: 2 / 2 / 3 / 3;
+}

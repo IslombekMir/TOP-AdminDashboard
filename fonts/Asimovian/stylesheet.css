@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Asimovian';
+    src: url('Asimovian-Regular.woff2') format('woff2'),
+        url('Asimovian-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
